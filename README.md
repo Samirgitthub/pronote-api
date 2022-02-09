@@ -1,10 +1,3 @@
-# ce fork ajoute :
-### messagerie() : liste les discussions dans la messagerie. retourne entre-autre ConversationId
-### message(ConversationId) : récupère une discussions de la messagerie.
-### TODO : utilisé withId() pour message() et messagerie()
-</br>
-</br>
-
 ## Pronote API - LISEZ MOI ABSOLUMENT
 
 ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/Litarvan/pronote-api/Node.js%20linting%20and%20testing/master?label=tests&logo=github&style=flat-square)
@@ -12,13 +5,17 @@
 [![Latest release](https://img.shields.io/github/v/release/Litarvan/pronote-api?color=darkgreen&include_prereleases&label=Latest%20release&style=flat-square)](https://github.com/Litarvan/pronote-api/releases)
 [![NPM release](https://img.shields.io/npm/v/pronote-api?style=flat-square)](https://npmjs.org/package/pronote-api)
 
-API Pronote **2020/2021** complète et plutôt stable avec intégration de nombreux CAS (connexion avec comptes spéciaux pour les régions).
+API Pronote **2020/2021** complète et plutôt stable avec intégration de nombreux CAS (connexion avec comptes spéciaux pour les régions). Fork du projet: https://github.com/mirsella/pronote-api.
+
 
 Disponible en tant que :
 - Librairie Node.JS [via NPM](https://www.npmjs.com/package/pronote-api) (note : **support TypeScript** complet)
 - Serveur GraphQL (donc depuis **n'importe que langage**), [voir instructions](#serveur-graphql)
 
-**Nouveauté 2020/2021 : [Session conservable](#conserver-la-session)**
+**Nouveauté 2020/2021 : [Session conservable](#conserver-la-session)**<br>
+**Nouveauté 2022 : messagerie() : liste les discussions dans la messagerie. retourne entre-autre <code>ConversationId</code>
+<code>message(ConversationId)</code> : récupère une discussions de la messagerie.
+TODO : utilisé <code>withId()</code> pour <code>message()</code> et <code>messagerie()</code>**
 
 ## Données récupérables
 
@@ -180,11 +177,11 @@ Exemple, pour récupérer les salles des cours du Mercredi 2 Septembre :
     }
 }
 ```
-Le schéma parent des requêtes et mutations se trouve [à cet endroit](https://github.com/Litarvan/pronote-api/blob/master/src/server/schemas/parent.graphql)
+Le schéma parent des requêtes et mutations se trouve [à cet endroit](https://github.com/Samirgitthub/pronote-api/blob/master/src/server/schemas/parent.graphql)
 
-Le schéma élèves des requêtes et mutations se trouve [à cet endroit](https://github.com/Litarvan/pronote-api/blob/master/src/server/schemas/student.graphql)
+Le schéma élèves des requêtes et mutations se trouve [à cet endroit](https://github.com/Samirgitthub/pronote-api/blob/master/src/server/schemas/student.graphql)
 
-Le schéma commun des requêtes et mutations se trouve [à cet endroit](https://github.com/Litarvan/pronote-api/blob/master/src/server/schemas/common.graphql) 
+Le schéma commun des requêtes et mutations se trouve [à cet endroit](https://github.com/Samirgitthub/pronote-api/blob/master/src/server/schemas/common.graphql) 
 
 ### Au secours je n'arrive pas à m'y connecter
 
